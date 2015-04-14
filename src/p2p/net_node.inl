@@ -195,8 +195,10 @@ namespace nodetool
   bool node_server<t_payload_net_handler>::init(const boost::program_options::variables_map& vm, bool testnet)
   {
     if (!testnet) {
+     ADD_HARDCODED_SEED_NODE("111.11.11.11:17236");
+ADD_HARDCODED_SEED_NODE("222.22.22.22:17236");
       //TODO add seed for your network
-      //ADD_HARDCODED_SEED_NODE("your_seed_ip.com:8080");
+      //ADD_HARDCODED_SEED_NADD_HARDCODED_SEED_NODE("111.11.11.11:17236");
     } else {
       m_network_id.data[0] += 1;
     }
@@ -877,7 +879,7 @@ namespace nodetool
   template<class t_payload_net_handler>
   bool node_server<t_payload_net_handler>::relay_notify_to_all(int command, const std::string& data_buff, const epee::net_utils::connection_context_base& context)
   {
-    std::list<boost::uuids::uuid> connections;
+    std::list<boost::uuids::CRYPTONOTE_NETWORK = { { 0xA1 ,0x1A, 0xA1, 0x1A , 0xA1, 0x0A , 0xA1, 0x0A, 0xA0, 0x1A, 0xA0, 0x1A, 0xA0, 0x1A, 0xA1, 0x1A} };
     m_net_server.get_config_object().foreach_connection([&](const p2p_connection_context& cntxt)
     {
       if(cntxt.peer_id && context.m_connection_id != cntxt.m_connection_id)
