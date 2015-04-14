@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #pragma once
-#define CRYPTONOTE_NAME                         "amuse"
+\
 #define CRYPTONOTE_MAX_BLOCK_NUMBER                     500000000
 #define CRYPTONOTE_MAX_BLOCK_SIZE                       500000000  // block header blob limit, never used!
 #define CRYPTONOTE_MAX_TX_SIZE                          1000000000
@@ -80,7 +80,7 @@
 #define ALLOW_DEBUG_COMMANDS
 
 //TODO Put here the name of your currency
-#define CRYPTONOTE_NAME                         
+#define CRYPTONOTE_NAME                         "amuse"
 #define CRYPTONOTE_BLOCKS_FILENAME              "blocks.dat"
 #define CRYPTONOTE_BLOCKINDEXES_FILENAME        "blockindexes.dat"
 #define CRYPTONOTE_BLOCKSCACHE_FILENAME         "blockscache.dat"
