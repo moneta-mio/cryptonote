@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #pragma once
-
+#define CRYPTONOTE_NAME                         "amuse"
 #define CRYPTONOTE_MAX_BLOCK_NUMBER                     500000000
 #define CRYPTONOTE_MAX_BLOCK_SIZE                       500000000  // block header blob limit, never used!
 #define CRYPTONOTE_MAX_TX_SIZE                          1000000000
@@ -22,7 +22,7 @@
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-#define MONEY_SUPPLY                                   
+#define MONEY_SUPPLY                                   ((uint64_t)(-1))
 #define EMISSION_SPEED_FACTOR                           (18)
 
 //TODO Define number of blocks for block size median calculation
